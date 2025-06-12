@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject, Inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ProfileCardComponent } from './common-ui/profile-card/profile-card.component';
+import { ProfileService } from './data/services/profile.service';
+import { Profile } from './data/interfaces/profile.interface';
 
 @Component({
   selector: 'app-root',
